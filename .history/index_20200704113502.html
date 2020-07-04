@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Prueba KVK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <p>Input</p>
+    <textarea id="input"  oninput="auto_grow(this)">
+[
+    'test.email+alex@kavak.com',
+    'test.e.mail+bob.cathy@kavak.com',
+    'testemail+david@ka.vak.com'
+]
+    </textarea>
+    <p>Output</p>
+    <textarea id="output" oninput="auto_grow(this)"></textarea>
+    <br>
+    <button onclick=ejecutar()>Ejecutar</button>
+  <script src="filtrarEmail.js"></script>
+  <script>
+      function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = (element.scrollHeight)+"px";
+        }
+  </script>
+  <style>
+      textarea {
+            resize: none;
+            overflow: hidden;
+            min-height: 50px;
+            max-height: 100px;
+        }
+  </style>
+</body>
+
+</html>
